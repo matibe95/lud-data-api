@@ -1,8 +1,8 @@
-const splitArrays = (initialArr) => {
+const splitArrays = (initialArr, amount) => {
   let subArrays = [];
 
-  for (let i = 0; i < initialArr.length; i += 8) {
-    subArrays.push(initialArr.slice(i, i + 8));
+  for (let i = 0; i < initialArr.length; i += amount) {
+    subArrays.push(initialArr.slice(i, i + amount));
   }
   return subArrays
 }
@@ -24,7 +24,22 @@ const convertArraysIntoProperObject = (data) => {
   return objetosArray
 }
 
+const arrayToObjectSerie_Results = (data) => {
+  const objetosArray = [];
+  for (const array of data) {
+    const objeto = {};
+
+    objeto.primerEquipo = array[2].trim();
+    objeto.primerEquipoGoles = array[3].trim().replace(/[\s\-]+/g, '');
+    objeto.segundoEquipoGoles = array[4].trim();
+    objeto.segundoEquipo = array[5].trim();
+    objetosArray.push(objeto);
+  }
+  return objetosArray
+}
+
 module.exports = {
   convertArraysIntoProperObject,
   splitArrays,
+  arrayToObjectSerie_Results,
 }
