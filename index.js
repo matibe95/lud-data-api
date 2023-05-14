@@ -1,31 +1,27 @@
-const { chromium } = require('playwright')
+const axios = require('axios')
+const cheerio = require('cheerio')
 const app = require('express')()
 const port = process.env.PORT || 8008
 const { convertArraysIntoProperObject, splitArrays } = require('./cleanDataFunctions.js')
+const { DEFAULT_SERIE, SERIES } = require('./constants/webUrls.js')
 
 app.get('/', (req, res) => {
   res.status(200).send('<h1>Matibe LUD Data Api</h1>')
 })
 
-app.get('/:ticker', async (req, res) => {
-  const { ticker } = req.params
-  const { key } = req.query
+app.get('/serie/:id', async (req, res) => {
 
-  if (!ticker || !key) {
-    return res.status(400).send({ message: 'Por favor introduzca una key y ticker' })
-  }
+  const { id } = req.params;
 
   try {
-    const url = 'http://ligauniversitaria.org.uy/sitio/index.php?option=com_k2&view=itemlist&layout=generic&tag=futbol%20sub18%20a&task=tag&Itemid=120'
+    const url = SERIES[id] || DEFAULT_SERIE
 
-    const browser = await chromium.launch()
-    const page = await browser.newPage()
-    await page.goto(url)
+    const { data } = await axios.get(url)
+    const $ = cheerio.load(data)
 
-    const completeTable = await page.frameLocator('iframe[id="blockrandom"]').first().locator('div table tbody tr td').allTextContents()
-
-    const data = splitArrays(completeTable)
-    const dataObject = convertArraysIntoProperObject(data)
+    const info = $('div table tbody tr td').get().map(val => $(val).text())
+    const infoSplit = splitArrays(info)
+    const dataObject = convertArraysIntoProperObject(infoSplit)
 
     res.send({ data: dataObject })
 
