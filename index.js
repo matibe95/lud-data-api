@@ -32,13 +32,12 @@ app.get('/serie/:id', async (req, res) => {
   }
 
 })
-app.get('/serie/:id/resultados/:resultados', async (req, res) => {
+app.get('/serie/:id/resultados', async (req, res) => {
 
   const { id } = req.params;
-  const { resultados } = req.params;
 
   try {
-    const url = RESULTADOS[resultados] || DEFAULT_SERIE
+    const url = RESULTADOS[id] || DEFAULT_SERIE
 
     const { data } = await axios.get(url)
     const $ = cheerio.load(data)
