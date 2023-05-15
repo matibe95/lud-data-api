@@ -4,9 +4,11 @@ const app = require('express')()
 const port = process.env.PORT || 8008
 const { convertArraysIntoProperObject, splitArrays, arrayToObjectSerie_Results } = require('./cleanDataFunctions.js')
 const { DEFAULT_SERIE, SERIES, RESULTADOS } = require('./constants/webUrls.js')
+const { htmlPage } = require('./constants/htmlPage.js')
 
 app.get('/', (req, res) => {
-  res.status(200).send('<h1>Matibe LUD Data Api</h1>')
+
+  res.status(200).send(htmlPage)
 })
 
 app.get('/serie/:id', async (req, res) => {
