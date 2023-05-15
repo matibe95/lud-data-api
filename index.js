@@ -2,9 +2,9 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const app = require('express')()
 const port = process.env.PORT || 8008
-const { convertArraysIntoProperObject, splitArrays, arrayToObjectSerie_Results } = require('./cleanDataFunctions.js')
-const { DEFAULT_SERIE, SERIES, RESULTADOS } = require('./constants/webUrls.js')
-const { htmlPage } = require('./constants/htmlPage.js')
+const { convertArraysIntoProperObject, splitArrays, arrayToObjectSerie_Results } = require('./src/functions/cleanDataFunctions.js')
+const { DEFAULT_SERIE, SERIES, RESULTADOS } = require('./src/constants/webUrls.js')
+const { htmlPage } = require('./src/constants/htmlPage.js')
 
 app.get('/', (req, res) => {
 
