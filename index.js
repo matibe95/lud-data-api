@@ -1,10 +1,13 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
+const cors = require('cors')
 const app = require('express')()
 const port = process.env.PORT || 8008
 const { convertArraysIntoProperObject, splitArrays, arrayToObjectSerie_Results } = require('./src/functions/cleanDataFunctions.js')
 const { DEFAULT_SERIE, SERIES, RESULTADOS } = require('./src/constants/webUrls.js')
 const { htmlPage } = require('./src/constants/htmlPage.js')
+
+app.use(cors())
 
 app.get('/', (req, res) => {
 
