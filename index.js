@@ -13,7 +13,31 @@ app.get('/', (req, res) => {
   res.status(200).send(htmlPage)
 })
 
-app.get('/serie/:id?*', async (req, res) => {
+app.get('/serie/:id', async (req, res) => {
+
+  const { id } = req.params;
+
+  try {
+    const url = SERIES[id] || DEFAULT_SERIE
+
+    const { data } = await axios.get(url)
+    const $ = cheerio.load(data)
+
+    const info = $('div table tbody tr td').get().map(val => $(val).text())
+    const infoSplit = splitArrays(info, 8)
+    const dataObject = convertArraysIntoProperObject(infoSplit)
+
+    res.send({
+      data: dataObject
+    })
+
+  } catch (error) {
+    res.status(500).send({ message: error.message })
+  }
+
+})
+
+app.get('/tabla/:id?*', async (req, res) => {
 
   const { id } = req.params;
 
