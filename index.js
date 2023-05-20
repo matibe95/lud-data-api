@@ -29,7 +29,7 @@ app.get('/serie/:id', async (req, res) => {
     const dataObject = convertArraysIntoProperObject(infoSplit)
 
     res.send({
-      tabla: dataObject
+      data: dataObject
     })
 
   } catch (error) {
@@ -52,7 +52,7 @@ app.get('/serie/:id/resultados', async (req, res) => {
     const dataObject = arrayToObjectSerie_Results(infoSplit)
 
     res.send({
-      resultados: dataObject
+      data: dataObject
     })
 
   } catch (error) {
