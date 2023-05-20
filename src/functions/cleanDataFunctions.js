@@ -24,6 +24,17 @@ const convertArraysIntoProperObject = (data) => {
   return objetosArray
 }
 
+const convertSerieArrayIntoObject = (data) => {
+  const objeto = {};
+  objeto.serie1 = data[0]
+  objeto.serie2 = data[1]
+  objeto.serie3 = data[2]
+  objeto.serie4 = data[3]
+  objeto.serie5 = data[4]
+
+  return objeto
+}
+
 const arrayToObjectSerie_Results = (data) => {
   const objetosArray = [];
   for (const array of data) {
@@ -42,4 +53,5 @@ module.exports = {
   convertArraysIntoProperObject,
   splitArrays,
   arrayToObjectSerie_Results,
+  convertSerieArrayIntoObject,
 }
