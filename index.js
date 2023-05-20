@@ -18,7 +18,7 @@ app.get('/serie/:id', async (req, res) => {
   const { id } = req.params;
 
   try {
-    const url = SERIES[id] || DEFAULT_SERIE
+    const url = URL_SERIES[id] || DEFAULT_SERIE
 
     const { data } = await axios.get(url)
     const $ = cheerio.load(data)
