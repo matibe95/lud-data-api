@@ -1,12 +1,12 @@
-const axios = require('axios')
-const cheerio = require('cheerio')
+// const axios = require('axios')
+// const cheerio = require('cheerio')
 const cors = require('cors')
 const app = require('express')()
 const port = process.env.PORT || 8008
-const { convertArraysIntoProperObject, splitArrays, convertirResultadosEnArrayDeObjetos, convertSerieArrayIntoObject } = require('./src/functions/cleanDataFunctions.js')
-const { DEFAULT_SERIE, URL_SERIES, RESULTADOS } = require('./src/constants/webUrls.js')
+// const { convertArraysIntoProperObject, splitArrays, convertirResultadosEnArrayDeObjetos, convertSerieArrayIntoObject } = require('./src/functions/cleanDataFunctions.js')
+// const { DEFAULT_SERIE, URL_SERIES, RESULTADOS } = require('./src/constants/webUrls.js')
 const { htmlPage } = require('./src/constants/htmlPage.js')
-const { agregarResultadoAlJson, leerJson } = require('./src/functions/agregarResultadoAlJson.js')
+// const { agregarResultadoAlJson, leerJson } = require('./src/functions/agregarResultadoAlJson.js')
 const { traerDataDeLaPagina } = require('./src/functions/traerResultadosDeLaPagina.js')
 
 app.use(cors())
@@ -15,29 +15,6 @@ app.get('/', (req, res) => {
   res.status(200).send(htmlPage)
 })
 
-app.get('/serie/:id', async (req, res) => {
-
-  const { id } = req.params;
-
-  try {
-    const url = URL_SERIES[id] || DEFAULT_SERIE
-
-    const { data } = await axios.get(url)
-    const $ = cheerio.load(data)
-
-    const info = $('div table tbody tr td').get().map(val => $(val).text())
-    const infoSplit = splitArrays(info, 8)
-    const dataObject = convertArraysIntoProperObject(infoSplit)
-
-    res.send({
-      data: dataObject
-    })
-
-  } catch (error) {
-    res.status(500).send({ message: error.message })
-  }
-
-})
 
 // app.get('/tabla/:id?*', async (req, res) => {
 
@@ -82,30 +59,55 @@ app.get('/serie/:id', async (req, res) => {
 
 // })
 
-app.get('/serie/:id/resultados', async (req, res) => {
+// app.get('/serie/:id/resultados', async (req, res) => {
 
-  const { id } = req.params;
-  const numSerie = parseInt(id)
+//   const { id } = req.params;
+//   const numSerie = parseInt(id)
 
-  try {
-    const url = RESULTADOS[numSerie] || DEFAULT_SERIE
+//   try {
+//     const url = RESULTADOS[numSerie] || DEFAULT_SERIE
 
-    const { data } = await axios.get(url)
-    const $ = cheerio.load(data)
+//     const { data } = await axios.get(url)
+//     const $ = cheerio.load(data)
 
-    const info = $('div table tbody tr td').get().map(val => $(val).text())
-    const infoSplit = splitArrays(info, 6)
-    const { numeroDeFecha, arrayResultados } = convertirResultadosEnArrayDeObjetos(infoSplit)
+//     const info = $('div table tbody tr td').get().map(val => $(val).text())
+//     const infoSplit = splitArrays(info, 6)
+//     const { numeroDeFecha, arrayResultados } = convertirResultadosEnArrayDeObjetos(infoSplit)
 
-    res.send({
-      data: agregarResultadoAlJson(numSerie, numeroDeFecha, arrayResultados)
-    })
+//     res.send({
+//       data: agregarResultadoAlJson(numSerie, numeroDeFecha, arrayResultados)
+//     })
 
-  } catch (error) {
-    res.status(500).send({ message: error.message })
-  }
+//   } catch (error) {
+//     res.status(500).send({ message: error.message })
+//   }
 
-})
+// })
+
+// app.get('/serie/:id', async (req, res) => {
+
+//   const { id } = req.params;
+
+//   try {
+//     const url = URL_SERIES[id] || DEFAULT_SERIE
+
+//     const { data } = await axios.get(url)
+//     const $ = cheerio.load(data)
+
+//     const info = $('div table tbody tr td').get().map(val => $(val).text())
+//     const infoSplit = splitArrays(info, 8)
+//     const dataObject = convertArraysIntoProperObject(infoSplit)
+
+//     res.send({
+//       data: dataObject
+//     })
+
+//   } catch (error) {
+//     res.status(500).send({ message: error.message })
+//   }
+
+// })
+
 
 app.get('/serie/:id/seccion/:seccion', async (req, res) => {
 
@@ -131,29 +133,29 @@ app.get('/serie/:id/seccion/:seccion', async (req, res) => {
   // }
 })
 
-app.get('/actualizarserie/:id/resultados', async (req, res) => {
+// app.get('/actualizarserie/:id/resultados', async (req, res) => {
 
-  const { id } = req.params;
-  const numSerie = parseInt(id)
+//   const { id } = req.params;
+//   const numSerie = parseInt(id)
 
-  try {
-    const url = RESULTADOS[numSerie] || DEFAULT_SERIE
+//   try {
+//     const url = RESULTADOS[numSerie] || DEFAULT_SERIE
 
-    const { data } = await axios.get(url)
-    const $ = cheerio.load(data)
+//     const { data } = await axios.get(url)
+//     const $ = cheerio.load(data)
 
-    const info = $('div table tbody tr td').get().map(val => $(val).text())
-    const infoSplit = splitArrays(info, 6)
-    const { numeroDeFecha, arrayResultados } = convertirResultadosEnArrayDeObjetos(infoSplit)
+//     const info = $('div table tbody tr td').get().map(val => $(val).text())
+//     const infoSplit = splitArrays(info, 6)
+//     const { numeroDeFecha, arrayResultados } = convertirResultadosEnArrayDeObjetos(infoSplit)
 
-    res.send({
-      data: agregarResultadoAlJson(numSerie, numeroDeFecha, arrayResultados)
-    })
+//     res.send({
+//       data: agregarResultadoAlJson(numSerie, numeroDeFecha, arrayResultados)
+//     })
 
-  } catch (error) {
-    res.status(500).send({ message: error.message })
-  }
+//   } catch (error) {
+//     res.status(500).send({ message: error.message })
+//   }
 
-})
+// })
 
 app.listen(port, () => console.log(`Server iniciado correctamente en el puerto ${port}`))

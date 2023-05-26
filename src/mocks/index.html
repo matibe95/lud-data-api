@@ -23,7 +23,7 @@
     <section class="code_container">
       <p>
         <span class="function">fetch</span>
-        <span>(</span><span id="string">'https://lud-api.vercel.app/serie/1'</span><span>)</span>
+        <span>(</span><span id="string">'https://lud-api.vercel.app/serie/1/seccion/tabla'</span><span>)</span>
         <br>
         <span class="punto">.</span><span class="function">then</span>(response <span class="arrow">=></span> response.<span>json()</span>)
         <br>
@@ -39,8 +39,8 @@
       <p>LUD-API contiene 2 rutas utilizables.</p>
     </div>
     <section class="rutas_ejemplos">
-      <p>/serie/"numero de serie" <span class="info-rutas">(Tabla de posiciones de la serie.)</span></p> 
-      <p>/serie/"numero de serie"/resultado <span class="info-rutas">(Resultados de la ultima fecha de la serie.)</span></p> 
+      <p>/serie/{numero de serie}/seccion/tabla" <span class="info-rutas">(Tabla de posiciones de la serie.)</span></p> 
+      <p>/serie/{numero de serie}/seccion/resultados <span class="info-rutas">(Resultados de la ultima fecha de la serie.)</span></p> 
     </section>
   </article>
   <footer>
