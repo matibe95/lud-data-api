@@ -20,7 +20,7 @@ const objetoResultados = ({ data, numSerie }) => {
   const series = arraySeriesConTodosResultados
   return series
 }
-const objetoTabla = (data) => {
+const objetoTabla = ({ data }) => {
   const objetosArray = [];
   for (const array of data) {
     const objeto = {};
