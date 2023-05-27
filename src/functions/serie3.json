@@ -1,0 +1,54 @@
+{
+  "4": [
+    {
+      "primerEquipo": "OLD CHRISTIANS CLUB",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "OLD BOYS CLUB"
+    },
+    {
+      "primerEquipo": "OLD WOODLANDS CLUB",
+      "primerEquipoGoles": "4",
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "OLD BRENDANS CLUB"
+    },
+    {
+      "primerEquipo": "URUNDAY UNIVERSITARIO",
+      "primerEquipoGoles": "0",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "POCO SITIO PLAYA VERDE"
+    },
+    {
+      "primerEquipo": "SAN AGUSTIN",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "TENIS EL PINAR"
+    }
+  ],
+  "5": [
+    {
+      "primerEquipo": "OLD BOYS CLUB",
+      "primerEquipoGoles": "0",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "TENIS EL PINAR"
+    },
+    {
+      "primerEquipo": "TROUVILLE UNIVERSITARIO",
+      "primerEquipoGoles": "3",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "SAN AGUSTIN"
+    },
+    {
+      "primerEquipo": "OLD BRENDANS CLUB",
+      "primerEquipoGoles": "3",
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "URUNDAY UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "OLD CHRISTIANS CLUB",
+      "primerEquipoGoles": "2",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "OLD WOODLANDS CLUB"
+    }
+  ]
+}

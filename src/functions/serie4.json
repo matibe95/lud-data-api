@@ -1,0 +1,60 @@
+{
+  "4": [
+    {
+      "primerEquipo": "E.L.F.",
+      "primerEquipoGoles": "4",
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "CARRASCO LAWN TENNIS"
+    },
+    {
+      "primerEquipo": "SAN JUAN BAUTISTA",
+      "primerEquipoGoles": "2",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "SEMINARIO UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "SAN PABLO UNIVERSITARIO",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "4",
+      "segundoEquipo": "PLAYA HONDA UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "A.E.B.U",
+      "primerEquipoGoles": "4",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "PELOTA AL MEDIO UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "E.L.F.",
+      "primerEquipoGoles": "2",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "SAN JUAN BAUTISTA"
+    }
+  ],
+  "5": [
+    {
+      "primerEquipo": "CARRASCO LAWN TENNIS",
+      "primerEquipoGoles": "2",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "SAN MIGUEL CITY"
+    },
+    {
+      "primerEquipo": "PELOTA AL MEDIO UNIVERSITARIO",
+      "primerEquipoGoles": "4",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "LA BLANQUEADA"
+    },
+    {
+      "primerEquipo": "PLAYA HONDA UNIVERSITARIO",
+      "primerEquipoGoles": "4",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "A.E.B.U"
+    },
+    {
+      "primerEquipo": "SEMINARIO UNIVERSITARIO",
+      "primerEquipoGoles": "0",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "SAN PABLO UNIVERSITARIO"
+    }
+  ]
+}
