@@ -7,23 +7,12 @@ const splitArrays = (initialArr, amount) => {
   return subArrays
 }
 
-const convertSerieArrayIntoObject = (data) => {
-  const objeto = {};
-  objeto.serie1 = data[0]
-  objeto.serie2 = data[1]
-  objeto.serie3 = data[2]
-  objeto.serie4 = data[3]
-  objeto.serie5 = data[4]
-
-  return objeto
-}
 
 const convertirDataEnArrayDeObjetos = (data, accion, numSerie) => {
-  return (accion({ data, numSerie }))
+  return accion({ data, numSerie })
 }
 
 module.exports = {
   splitArrays,
   convertirDataEnArrayDeObjetos,
-  convertSerieArrayIntoObject,
 }

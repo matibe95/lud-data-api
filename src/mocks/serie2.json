@@ -1,0 +1,54 @@
+{
+  "4": [
+    {
+      "primerEquipo": "CIRCULO DE TENIS MONTEVIDEO",
+      "primerEquipoGoles": "11",
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "ACADEMIA FRM"
+    },
+    {
+      "primerEquipo": "CLUB SEMINARIO",
+      "primerEquipoGoles": "3",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "CARRASCO POLO CLUB"
+    },
+    {
+      "primerEquipo": "J.M.L.M",
+      "primerEquipoGoles": "3",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "NAUTICO CARRASCO Y PUNTA GORDA"
+    },
+    {
+      "primerEquipo": "LA ESCALINATA",
+      "primerEquipoGoles": "8",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "LA PICADA F.C."
+    }
+  ],
+  "5": [
+    {
+      "primerEquipo": "ACADEMIA FRM",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "LA PICADA F.C."
+    },
+    {
+      "primerEquipo": "NACIONAL UNIVERSITARIO",
+      "primerEquipoGoles": "4",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "LA ESCALINATA"
+    },
+    {
+      "primerEquipo": "CARRASCO POLO CLUB",
+      "primerEquipoGoles": "0",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "J.M.L.M"
+    },
+    {
+      "primerEquipo": "CIRCULO DE TENIS MONTEVIDEO",
+      "primerEquipoGoles": "0",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "CLUB SEMINARIO"
+    }
+  ]
+}

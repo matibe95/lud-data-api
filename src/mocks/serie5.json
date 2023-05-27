@@ -1,0 +1,48 @@
+{
+  "4": [
+    {
+      "primerEquipo": "CLUB NAUTICO",
+      "primerEquipoGoles": "8",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "ARQUITECTURA JRS."
+    },
+    {
+      "primerEquipo": "COLEGIO Y LICEO INGLES",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "CEIBOS CLUB"
+    },
+    {
+      "primerEquipo": "ELBIO FERNANDEZ",
+      "primerEquipoGoles": "2",
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "OLD IVY"
+    },
+    {
+      "primerEquipo": "ISASA UNIVERSITARIO",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "4",
+      "segundoEquipo": "MATURANA UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "CEIBOS CLUB",
+      "primerEquipoGoles": "4",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "CTM SUB18"
+    },
+    {
+      "primerEquipo": "CLUB NAUTICO",
+      "primerEquipoGoles": "12",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "COLEGIO Y LICEO INGLES"
+    }
+  ],
+  "5": [
+    {
+      "primerEquipo": "ARQUITECTURA JRS.",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "MATURANA UNIVERSITARIO"
+    }
+  ]
+}

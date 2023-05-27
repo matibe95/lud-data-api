@@ -2,7 +2,7 @@ const { agregarResultadoAlHistorial } = require("./agregarResultadoAlHistorial")
 
 function convertirResultadosEnArray(data) {
   const resultados = [];
-  const numeroDeFecha = data[1][0].split(' ')[1]
+  const numeroDeFecha = data[0][0].split(' ')[1]
   for (const array of data) {
     const partido = {};
     partido.primerEquipo = array[2].trim();
@@ -11,13 +11,13 @@ function convertirResultadosEnArray(data) {
     partido.segundoEquipo = array[5].trim();
     resultados.push(partido);
   }
-  return { numeroDeFecha, resultados }
+  return { resultados, numeroDeFecha }
 }
 
 const objetoResultados = ({ data, numSerie }) => {
   const { numeroDeFecha, resultados } = convertirResultadosEnArray(data)
-  const arraySeriesConTodosResultados = agregarResultadoAlHistorial({ numeroDeFecha, resultados, numSerie })
-  const series = arraySeriesConTodosResultados
+  const arrayConResultadosDeSerie = agregarResultadoAlHistorial({ numeroDeFecha, resultados, numSerie })
+  const series = arrayConResultadosDeSerie
   return series
 }
 const objetoTabla = ({ data }) => {

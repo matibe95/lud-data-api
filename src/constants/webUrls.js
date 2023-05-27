@@ -1,5 +1,3 @@
-const DEFAULT_SERIE = 0
-
 const URL_SERIES = Object.freeze({
   1: 'http://box2023.temp.domains/~ligauniv/get.php?link=1Posiciones_red.asp?temporada=110!deporte=F!torneo=18!categoria=18!rueda=1!serie=18-1-',
   2: 'http://box2023.temp.domains/~ligauniv/get.php?link=1Posiciones_red.asp?temporada=110!deporte=F!torneo=18!categoria=18!rueda=1!serie=18-2-',
@@ -18,6 +16,5 @@ const RESULTADOS = Object.freeze({
 
 module.exports = {
   URL_SERIES,
-  DEFAULT_SERIE,
   RESULTADOS
 }
