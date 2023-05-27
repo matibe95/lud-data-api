@@ -1,12 +1,29 @@
-const { leerJson } = require("./agregarResultadoAlJson")
+const { JsonConDatos } = require("./manipularJson")
 
-function agregarResultadoAlHistorial({ numeroDeFecha, resultados, numSerie }) {
+function agregarResultadoAlHistorial({ numeroDeFecha, numSerie, resultados }) {
+  const serie = 'serie' + numSerie
+  const jsonConResultadosDeLaSerie = new JsonConDatos(serie)
 
-  const { fechas } = leerJson()
+  const resultadosDeLaSerie = jsonConResultadosDeLaSerie.contenido
+  const nuevoResultado = resultados
 
-  // console.log(numSerie - 1)
-  // const resultado = diasPartido[numSerie - 1]
-  return { fechas }
+  const propiedadParaCambiar = encontrarFecha({
+    numeroDeFecha,
+    nuevoResultado,
+    resultadosDeLaSerie,
+    serie
+  })
+
+  return jsonConResultadosDeLaSerie.sobreEscribirResultado(propiedadParaCambiar, nuevoResultado)
+}
+
+function encontrarFecha({ numeroDeFecha, resultadosDeLaSerie }) {
+  for (const propiedad in resultadosDeLaSerie) {
+    if (propiedad === numeroDeFecha) {
+      return propiedad
+    }
+  }
+  return numeroDeFecha
 }
 
 module.exports = {
