@@ -25,5 +25,4 @@ app.get('/serie/:id/seccion/:seccion', async (req, res) => {
   }
 })
 
-
 app.listen(port, () => console.log(`Server iniciado correctamente en el puerto ${port}`))
