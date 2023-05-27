@@ -7,7 +7,7 @@ class JsonConDatos {
   }
 
   leerJson() {
-    const dataFromJson = fs.readFileSync(`./src/mocks/${this.nombreJson}.json`)
+    const dataFromJson = fs.readFileSync(`../mocks/${this.nombreJson}.json`)
     const jsonConLosResultados = JSON.parse(dataFromJson)
     return jsonConLosResultados;
   }
