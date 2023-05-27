@@ -1,8 +1,5 @@
 const fs = require('fs')
 const path = require('path')
-console.log(path.dirname(__filename));
-console.log(path.dirname(__dirname));
-// const jaja = require('path').dirname(require.main.filename)
 class JsonConDatos {
   constructor(nombreJson) {
     this.nombreJson = nombreJson;
@@ -10,8 +7,7 @@ class JsonConDatos {
   }
 
   leerJson() {
-    const dataFromJson = fs.readFileSync(path.resolve(__dirname, 'serie2.json'), 'UTF-8');
-    // const dataFromJson = fs.readFileSync(`./src/mocks/${this.nombreJson}.json`)
+    const dataFromJson = fs.readFileSync(path.resolve(__dirname, `${this.nombreJson}.json`), 'UTF-8');
     const jsonConLosResultados = JSON.parse(dataFromJson)
     return jsonConLosResultados;
   }
