@@ -5,14 +5,14 @@ function convertirResultadosEnArray({ data }) {
   if (data.length === 0) {
     return { resultados: null, numeroDeFecha: null };
   }
-  const numeroDeFecha = data[0][0].split(' ')[1]
+  const numeroDeFecha = data[data.length - 1][0].split(' ')[1]
   for (const array of data) {
     const partido = {};
     partido.primerEquipo = array[2].trim();
     partido.primerEquipoGoles = array[3].trim().replace(/[\s\-]+/g, '');
     partido.segundoEquipoGoles = array[4].trim();
     partido.segundoEquipo = array[5].trim();
-    resultados.push(partido);
+    if (array[0].split(' ')[1] === numeroDeFecha) resultados.push(partido);
   }
   return { resultados, numeroDeFecha }
 }
