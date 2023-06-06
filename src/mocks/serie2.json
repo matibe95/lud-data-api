@@ -50,5 +50,31 @@
       "segundoEquipoGoles": "0",
       "segundoEquipo": "CLUB SEMINARIO"
     }
+  ],
+  "7": [
+    {
+      "primerEquipo": "ACADEMIA FRM",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "NACIONAL UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "NAUTICO CARRASCO Y PUNTA GORDA",
+      "primerEquipoGoles": "2",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "LA PICADA F.C."
+    },
+    {
+      "primerEquipo": "CARRASCO POLO CLUB",
+      "primerEquipoGoles": "3",
+      "segundoEquipoGoles": "0",
+      "segundoEquipo": "LA ESCALINATA"
+    },
+    {
+      "primerEquipo": "CLUB SEMINARIO",
+      "primerEquipoGoles": "5",
+      "segundoEquipoGoles": "3",
+      "segundoEquipo": "J.M.L.M"
+    }
   ]
 }
