@@ -51,30 +51,24 @@
       "segundoEquipo": "HEBRAICA UNIVERSITARIO"
     }
   ],
-  "7": [
-    {
-      "primerEquipo": "SANTA ELENA LAGOMAR",
-      "primerEquipoGoles": "0",
-      "segundoEquipoGoles": "0",
-      "segundoEquipo": "ALEMAN UNIVERSITARIO"
-    },
-    {
-      "primerEquipo": "SAGRADA FAMILIA UNIVERSITARIO",
-      "primerEquipoGoles": "3",
-      "segundoEquipoGoles": "4",
-      "segundoEquipo": "SCUOLA PALERMO"
-    },
-    {
-      "primerEquipo": "COLEGIO ARETEIA",
-      "primerEquipoGoles": "",
-      "segundoEquipoGoles": "--",
-      "segundoEquipo": "CRANDON UNIVERSITARIO"
-    },
+  "6": [
     {
       "primerEquipo": "HEBRAICA UNIVERSITARIO",
       "primerEquipoGoles": "0",
-      "segundoEquipoGoles": "0",
-      "segundoEquipo": "INDEPENDIENTE"
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "SANTA ELENA LAGOMAR"
+    },
+    {
+      "primerEquipo": "INDEPENDIENTE",
+      "primerEquipoGoles": "4",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "COLEGIO ARETEIA"
+    },
+    {
+      "primerEquipo": "CRANDON UNIVERSITARIO",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "DEPORTIVO LS SAD"
     }
   ]
 }
