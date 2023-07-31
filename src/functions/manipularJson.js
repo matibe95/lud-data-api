@@ -7,7 +7,9 @@ class JsonConDatos {
   }
 
   leerJson() {
-    const dataFromJson = fs.readFileSync(path.resolve(__dirname, `${this.nombreJson}.json`), 'UTF-8');
+    const rutaDeLaCarpeta = './src/mocks/'
+    const rutaDelArchivo = path.resolve(rutaDeLaCarpeta, `${this.nombreJson}.json`)
+    const dataFromJson = fs.readFileSync(rutaDelArchivo, 'UTF-8');
     const jsonConLosResultados = JSON.parse(dataFromJson)
     return jsonConLosResultados;
   }
