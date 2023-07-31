@@ -1,0 +1,34 @@
+{
+  "1": [
+    {
+      "primerEquipo": "SAN PABLO UNIVERSITARIO",
+      "primerEquipoGoles": "2",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "URUNDAY UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "SAN AGUSTIN",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "COLEGIO Y LICEO INGLES"
+    },
+    {
+      "primerEquipo": "SAGRADA FAMILIA UNIVERSITARIO",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "ARQUITECTURA JRS."
+    },
+    {
+      "primerEquipo": "LA PICADA F.C.",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "COLEGIO ARETEIA"
+    },
+    {
+      "primerEquipo": "ACADEMIA FRM",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "SAN JUAN BAUTISTA"
+    }
+  ]
+}
