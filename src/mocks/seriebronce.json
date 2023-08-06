@@ -30,5 +30,37 @@
       "segundoEquipoGoles": "--",
       "segundoEquipo": "CRANDON UNIVERSITARIO"
     }
+  ],
+  "2": [
+    {
+      "primerEquipo": "A.E.B.U",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "TROUVILLE UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "SCUOLA PALERMO",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "ELBIO FERNANDEZ"
+    },
+    {
+      "primerEquipo": "LA ESCALINATA",
+      "primerEquipoGoles": "2",
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "ISASA UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "OLD BRENDANS CLUB",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "OLD IVY"
+    },
+    {
+      "primerEquipo": "SEMINARIO UNIVERSITARIO",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "1",
+      "segundoEquipo": "NAUTICO CARRASCO Y PUNTA GORDA"
+    }
   ]
 }
