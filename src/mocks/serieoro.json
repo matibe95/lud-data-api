@@ -74,5 +74,37 @@
       "segundoEquipoGoles": "0",
       "segundoEquipo": "OLD BOYS CLUB"
     }
+  ],
+  "3": [
+    {
+      "primerEquipo": "PELOTA AL MEDIO UNIVERSITARIO",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "PLAYA HONDA UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "CLUB NAUTICO",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "SANTA ELENA LAGOMAR"
+    },
+    {
+      "primerEquipo": "LA BLANQUEADA",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "NACIONAL UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "OLD CHRISTIANS CLUB",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "CEIBOS CLUB"
+    },
+    {
+      "primerEquipo": "MATURANA UNIVERSITARIO",
+      "primerEquipoGoles": "1",
+      "segundoEquipoGoles": "2",
+      "segundoEquipo": "DEPORTIVO LS SAD"
+    }
   ]
 }

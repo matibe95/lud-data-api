@@ -62,5 +62,31 @@
       "segundoEquipoGoles": "--",
       "segundoEquipo": "SAN AGUSTIN"
     }
+  ],
+  "3": [
+    {
+      "primerEquipo": "SAGRADA FAMILIA UNIVERSITARIO",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "URUNDAY UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "LA PICADA F.C.",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "COLEGIO Y LICEO INGLES"
+    },
+    {
+      "primerEquipo": "ACADEMIA FRM",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "ARQUITECTURA JRS."
+    },
+    {
+      "primerEquipo": "SAN MIGUEL CITY",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "SAN JUAN BAUTISTA"
+    }
   ]
 }

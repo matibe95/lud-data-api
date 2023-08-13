@@ -74,5 +74,43 @@
       "segundoEquipoGoles": "--",
       "segundoEquipo": "CTM SUB18"
     }
+  ],
+  "3": [
+    {
+      "primerEquipo": "POCO SITIO PLAYA VERDE",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "CTM SUB18"
+    },
+    {
+      "primerEquipo": "INDEPENDIENTE",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "CIRCULO DE TENIS MONTEVIDEO"
+    },
+    {
+      "primerEquipo": "J.M.L.M",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "E.L.F."
+    },
+    {
+      "primerEquipo": "ALEMAN UNIVERSITARIO",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "CARRASCO LAWN TENNIS"
+    },
+    {
+      "primerEquipo": "CARRASCO POLO CLUB",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "HEBRAICA UNIVERSITARIO"
+    },
+    {
+      "primerEquipo": "OLD WOODLANDS CLUB",
+      "primerEquipoGoles": "",
+      "segundoEquipoGoles": "--",
+      "segundoEquipo": "TENIS EL PINAR"
+    }
   ]
 }
